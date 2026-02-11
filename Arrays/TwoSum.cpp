@@ -24,3 +24,34 @@ public:
         return {};
     }
 };
+
+
+int main() {
+
+    int n;
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    vector<int> nums(n);
+
+    cout << "Enter elements: ";
+    for(int i = 0; i < n; i++){
+        cin >> nums[i];
+    }
+
+    int target;
+    cout << "Enter target: ";
+    cin >> target;
+
+    Solution obj;
+    vector<int> answer = obj.twoSum(nums, target);
+
+    if(answer.empty()){
+        cout << "No valid pair found." << endl;
+    }
+    else{
+        cout << "Indices: " << answer[0] << " " << answer[1] << endl;
+    }
+
+    return 0;
+}
