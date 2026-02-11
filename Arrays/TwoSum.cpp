@@ -1,6 +1,7 @@
 // 1.Two Sum
 
 #include <vector>
+#include <iostream>
 using namespace std;
 
 class Solution {
